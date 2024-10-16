@@ -16,6 +16,5 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth(app);
-// auth().useEmulator("http://localhost:5173/");
-
 auth.languageCode = "it";
+auth.useDeviceLanguage();
